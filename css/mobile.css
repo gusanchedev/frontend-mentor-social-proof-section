@@ -1,19 +1,89 @@
-:root{
-    --Very-Dark-Magenta: hsl(300, 43%, 22%);
-    --Soft-Pink: hsl(333, 80%, 67%);
-    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
-    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
-    --White: hsl(0, 0%, 100%);
-
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-size: 15px;
-    font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  margin: 0 auto;
+}
+header,
+main {
+  margin: 40px 30px;
+}
+h1 {
+  color: var(--Very-Dark-Magenta);
+  text-align: center;
+  margin: 20px 20px;
+  font-weight: 700;
+}
+header p {
+  text-align: center;
+  margin: 0 5px;
+  color: var(--Dark-Grayish-Magenta);
+  font-weight: 500;
+}
+.review {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.stars {
+  margin-bottom: 10px;
+}
+.review p {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+.testimonials {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.testimonial-card {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 40px;
+}
+.customer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.customer-name {
+  margin-left: 30px;
+}
+.customer-name p:nth-of-type(1) {
+  color: var(--White);
+  font-size: 14px;
+  font-weight: 700;
+}
+.customer-name p:nth-of-type(2) {
+  color: var(--Soft-Pink);
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.customer-picture img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.customer-testimonial p {
+  color: var(--Light-Grayish-Magenta);
+  font-size: 13px;
+  margin: 20px 5px 0 0;
+  font-weight: 500;
 }
 .attribution {
   font-size: 11px;
