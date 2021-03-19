@@ -6,10 +6,11 @@ body {
   
 }
 main {
-  margin: 80px 80px;
+  margin: 50px 100px 80px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr;
+  
 
 }
 header {
@@ -28,6 +29,7 @@ header p {
     margin-top: 10px;
     line-height: 25px;
     max-width: 80%;
+    font-size: 13px;
 }
 .ratings {
     grid-column: 2 / 3;
@@ -38,12 +40,14 @@ header p {
     grid-row: 2 / 3;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0;
 }
 .review {
     display: flex;
-    padding: 20px 30px;
-    margin:20px;
+    padding: 15px 30px;
+    margin: 20px 0;
     align-items: center;
 }
 .review p {
@@ -54,4 +58,16 @@ header p {
 }
 .testimonial-card {
     margin: 0;
+    padding: 35px 35px 35px 35px;
+}
+.testimonial-card:nth-of-type(2) {
+    position: relative;
+    top: 15px;
+}
+.testimonial-card:nth-of-type(3) {
+    position: relative;
+    top: 30px;
+}
+.customer-testimonial p {
+    font-size: 12px;
 }
