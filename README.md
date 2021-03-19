@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](/desktop/desktop-preview.jpg)
+![]("/design/desktop-preview.jpg")
 
 ### Links
 
-- Solution URL: [@Github](https://your-solution-url.com)
-- Live Site URL: [@Vercel](https://your-live-site-url.com)
+- Solution URL: [@Github](https://github.com/gustavosanchezgalarza/frontend-mentor-social-proof-section)
+- Live Site URL: [@Vercel](https://frontend-mentor-social-proof-section-five-delta.vercel.app/)
 
 ## My process
 
@@ -42,40 +42,44 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. Using multiple background images
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  margin: 0 auto;
+  background-image: url('../images/bg-pattern-top-mobile.svg'), url('../images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top 0px right 0px, bottom 0px right 0px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+2. Using media queries for adjusting content to several screen types
+```html
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:768px and max-width:1024px)"
+      href="./css/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1025px)"
+      href="./css/laptop.css"
+    />
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Next challenges will include Javascript to provide animation and interaction to user.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Flexbox in CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+- [Grid in CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Author
 
