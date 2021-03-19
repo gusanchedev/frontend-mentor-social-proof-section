@@ -1,0 +1,7 @@
+.testimonials {
+    display: flex;
+    gap: 10px;
+}
+.testimonial-card {
+    padding: 35px;;
+}
